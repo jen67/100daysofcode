@@ -168,7 +168,7 @@ section {
 }
 
 
-.text:hover .author {
+ /* .text:hover .author {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -177,8 +177,8 @@ section {
 .text:hover .hide {
     opacity: 1;
     visibility: visible;
-}
-
+} */
+ 
 
 .text {
     position: relative;
