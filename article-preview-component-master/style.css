@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 p {
@@ -28,25 +29,17 @@ p {
     margin-bottom: 1rem;
 }
 
-.img {
-    background: url(./images/drawers.jpg) no-repeat center center;
-    height: 300px;
+.img img {
     width: 100%;
-    background-size: cover;
     border-radius: 18px 18px 0 0;
 }
-
-/* .img img {
-    width: 100%;
-    border-radius: 18px 18px 0 0;
-} */
 
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 300px;
     margin: 3rem auto;
 }
 
@@ -201,31 +194,33 @@ section {
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     section {
-        width: 70%;
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        align-items: stretch;
-    }
-
-    .img {
-        background-position: center;
-        border-radius: 10px 0 0 10px;
+        width: 700px;
+        flex-direction: row;
     }
 
     .text {
-        padding: 2.rem;
+        margin: 0;
+        box-shadow: none;
         border-radius: 0 10px 10px 0;
-        margin-top: 0;
+        padding: 1.5rem;
     }
 
     .text h1 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
-    .text p {
-        font-size: 1rem
+    .img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+        overflow: hidden;
     }
 
+    .img img {
+        height: 100%;
+        display: block;
+        border-radius: 0;
+    }
 }
