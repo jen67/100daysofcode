@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 p {
@@ -196,20 +197,30 @@ section {
 @media screen and (min-width: 768px) {
     section {
         width: 700px;
-        flex-direction: row
+        flex-direction: row;
     }
 
     .text {
         margin: 0;
         box-shadow: none;
         border-radius: 0 10px 10px 0;
-        padding: 1.4.3rem
+        padding: 1.5rem;
     }
 
-}
+    .text h1 {
+        font-size: 1.3rem;
+    }
 
-.img img {
-    border-radius: 10px 0 0 10px;
-    height: 100%;
-    width: 100%;
+    .img {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+        overflow: hidden;
+    }
+
+    .img img {
+        height: 100%;
+        display: block;
+        border-radius: 0;
+    }
 }
