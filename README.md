@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Design](./images/desktop-design.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/jen67/100daysofcode)
+- Live Site URL: [live site URL](https://jen67.github.io/100daysofcode/)
 
 ## My process
 
@@ -43,16 +43,13 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### Continued development
+This challenge seemed simple at first, but it turned out to be more complex than expected. I had to utilize online resources, especially for implementing the mobile tooltip. I look forward to improving further by creating more webpages and continuing my learning journey.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [resource 1](https://www.youtube.com/watch?v=FJRtqmL25gQ) - This video helped me understand how to postion the tooltip for the mobile design.
 
 ## Author
 
