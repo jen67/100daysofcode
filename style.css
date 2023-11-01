@@ -201,6 +201,97 @@ footer {
 @media screen and (min-width: 768px) {
     main {
         display: grid;
+        grid-template-columns: 20rem auto;
+        grid-template-areas:
+            "hero-img card"
+            "hero-img author";
+        max-width: 60rem;
+        max-height: 20rem;
+    }
+
+    .hero-img {
+        grid-area: hero-img;
+        border-radius: 1rem 0 0 1rem;
+        margin: 0;
+        background-position: left;
+    }
+
+    .card {
+        grid-area: card;
+        padding: 2.5rem 2.5rem 0;
+    }
+
+    .card h1 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.73rem;
+    }
+
+    .author {
+        grid-area: author;
+        padding: 2.5rem 3rem 3rem 3rem;
+    }
+
+    .author .author-details img {
+        width: 3.2rem;
+    }
+
+    .author .author-details h2 {
+        font-size: 1rem;
+    }
+
+    .author .author-details p {
+        font-size: 1rem;
+    }
+
+    .author .share-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .share {
+        grid-area: author;
+        place-content: center;
+        border-radius: 1rem;
+        width: 20rem;
+        padding: 1.5rem 3rem;
+        bottom: 105%;
+        left: 42%;
+    }
+
+    .share::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -10px;
+        border-width: 20px;
+        border-style: solid;
+        border-color: var(--Very-Dark-Grayish-Blue) transparent transparent transparent;
+    }
+
+    .share .share-icon {
+        display: none;
+    }
+
+    .share img {
+        width: 1.5rem;
+        margin-left: 1.8rem;
+    }
+
+    footer {
+        padding-top: 4rem;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 800px) {
+    main {
         grid-template-columns: 28.5rem auto;
         grid-template-areas:
             "hero-img card"
@@ -232,7 +323,6 @@ footer {
     .author {
         grid-area: author;
         padding: 2.5rem 3rem 3rem 3rem;
-        ;
     }
 
 
@@ -282,4 +372,9 @@ footer {
         width: 1.5rem;
         margin-left: 1.8rem;
     }
+
+    footer {
+        padding-top: 4rem;
+    }
+
 }
