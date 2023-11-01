@@ -126,9 +126,20 @@ main {
     position: absolute;
     width: 100%;
     bottom: 0;
-    transform: translateY(100%);
     border-radius: 0 0 1rem 1rem;
+
+}
+
+#share {
+    transform: translateY(-100%);
     opacity: 0;
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+#share.visible {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
 
@@ -149,11 +160,6 @@ main {
     width: 1.3rem;
     margin-left: 0.8rem;
 }
-
-/* .share .socials a{
-    display: inherit;
-    
-} */
 
 .share .share-icon {
     background-color: var(--Desaturated-Dark-Blue);
@@ -193,5 +199,87 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    
+    main {
+        display: grid;
+        grid-template-columns: 28.5rem auto;
+        grid-template-areas:
+            "hero-img card"
+            "hero-img author";
+        max-width: 73rem;
+        max-height: 28rem;
+    }
+
+    .hero-img {
+        grid-area: hero-img;
+        border-radius: 1rem 0 0 1rem;
+        margin: 0;
+        background-position: left;
+    }
+
+    .card {
+        grid-area: card;
+        padding: 3rem 3rem 0;
+    }
+
+    .card h1 {
+        font-size: 2.1rem;
+    }
+
+    .card p {
+        font-size: 1.4rem;
+    }
+
+    .author {
+        grid-area: author;
+        padding: 2.5rem 3rem 3rem 3rem;
+        ;
+    }
+
+
+    .author .author-details img {
+        width: 4.2rem;
+    }
+
+    .author .author-details h2 {
+        font-size: 1.2rem;
+    }
+
+    .author .author-details p {
+        font-size: 1rem;
+    }
+
+    .author .share-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .share {
+        grid-area: author;
+        place-content: center;
+        border-radius: 1rem;
+        width: 24.8rem;
+        padding: 1.7rem 3rem;
+        bottom: 105%;
+        left: 60%;
+    }
+
+    .share::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -10px;
+        border-width: 20px;
+        border-style: solid;
+        border-color: var(--Very-Dark-Grayish-Blue) transparent transparent transparent;
+    }
+
+    .share .share-icon {
+        display: none;
+    }
+
+    .share img {
+        width: 1.5rem;
+        margin-left: 1.8rem;
+    }
 }
