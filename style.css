@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 500;
+    min-height: 100vh;
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+    position: relative;
+    box-shadow: 0px 18px 11px rgba(0, 0, 0, 0.03);
+    background-color: var(--White);
+    margin: 0 auto;
+    border-radius: 0.8rem;
+}
+
+.hero-img {
+    background-image: url("./images/drawers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 20rem;
+    max-height: 28rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem 1rem 0 0;
+
+}
+
+.card {
+    padding: 0 1.5rem;
+}
+
+.card h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+
+.card p {
+    color: var(--Desaturated-Dark-Blue);
+    font-size: 0.8125rem;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.author .author-details{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.author .author-details h2{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+.author .author-details p{
+    font-size: 0.8125rem;
+    color: var(--Desaturated-Dark-Blue);
+}
+
+.author .author-details img{
+    border-radius: 50%;
+    width:3rem;
+} 
+
+.author .share-icon{
+    background-color: var(--Light-Grayish-Blue);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.author .share-icon:hover{
+    background-color: var(--Desaturated-Dark-Blue);
+}
+
+.author .share-icon:hover svg path{
+    fill: var(--White);
+}
+
+
+.share {
+padding: 2rem 1.5rem 2rem 1.5rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: var(--Very-Dark-Grayish-Blue);
+position: absolute;
+width: 100%;
+bottom:0;
+transform: translateY(100%);
+border-radius: 0 0 1rem 1rem;
+opacity: 0;
+}
+
+
+.share .socials {
+    display: flex;
+    align-items: center;
+}
+
+.share .socials p{
+    text-transform: uppercase;
+    color:var(--Grayish-Blue);
+    display:inherit;
+    letter-spacing: 0.38em;
+    line-height: 1.5rem;
+}
+
+ion-icon{
+    color:var(--White);
+    font-size: 2rem;
+}
+.share .socials a{
+    display: inherit;
+    margin-right: 0.8rem;
+}
+
+.share .share-icon{
+    background-color: var(--Desaturated-Dark-Blue);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.share .share-icon svg path{
+    fill: var(--White);
+}
+
+.share .share-icon:hover{
+    background-color: var(--Light-Grayish-Blue);
+}
+
+.share .share-icon:hover svg path{
+    fill: var(--Desaturated-Dark-Blue);
+}
+
+footer{
+    padding: 1.5rem;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
