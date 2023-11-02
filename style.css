@@ -16,7 +16,7 @@
 }
 
 body {
-    font-size: 1rem;
+    font-size: 100%;
     font-weight: 500;
     min-height: 100vh;
     background-color: var(--Light-Grayish-Blue);
@@ -148,14 +148,15 @@ main {
     align-items: center;
 }
 
-.share .socials img{
+.share .socials img {
     transition: transform 0.3s;
 }
 
-.share .socials img:hover{
+.share .socials img:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
+
 .share .socials p {
     text-transform: uppercase;
     color: var(--Grayish-Blue);
@@ -164,11 +165,13 @@ main {
     line-height: 1.5rem;
     transition: transform 0.3s;
 }
-.share .socials p:hover{
+
+.share .socials p:hover {
     cursor: pointer;
-    transform: rotate(5deg);
+    transform: scale(1.1);
 
 }
+
 .share img {
     width: 1.3rem;
     margin-left: 0.8rem;
@@ -218,8 +221,8 @@ footer {
         grid-template-areas:
             "hero-img card"
             "hero-img author";
-        max-width: 60rem;
-        max-height: 20rem;
+        max-width: 56rem;
+        max-height: 28rem;
     }
 
     .hero-img {
@@ -298,19 +301,50 @@ footer {
         padding-top: 4rem;
     }
 
+}
 
+@media screen and (min-width: 805px) {
+    main {
+        grid-template-columns: 22rem auto;
+        max-width: 52rem;
+    }
+
+    .share {
+        left: 50%;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+    main {
+        grid-template-columns: 19rem auto;
+        max-width: 54rem;
+        max-height: 28rem;
+    }
+
+    .card h1 {
+        font-size: 1.6rem
+    }
+
+    .card p {
+        font-size: 1.1rem
+    }
+
+    .share {
+        left: 56%
+    }
 
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1026px) {
     main {
-        grid-template-columns: 28.5rem auto;
+        grid-template-columns: 27.5rem auto;
         grid-template-areas:
             "hero-img card"
             "hero-img author";
-        max-width: 73rem;
-        max-height: 28rem;
+        max-width: 80rem;
+        max-height: 30rem;
     }
 
     .hero-img {
@@ -318,6 +352,7 @@ footer {
         border-radius: 1rem 0 0 1rem;
         margin: 0;
         background-position: left;
+        max-height: 30rem;
     }
 
     .card {
@@ -326,11 +361,11 @@ footer {
     }
 
     .card h1 {
-        font-size: 2.1rem;
+        font-size: 1.8rem;
     }
 
     .card p {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     .author {
@@ -363,7 +398,7 @@ footer {
         width: 24.8rem;
         padding: 1.7rem 3rem;
         bottom: 105%;
-        left: 60%;
+        left: 50%;
     }
 
     .share::after {
@@ -390,4 +425,46 @@ footer {
         padding-top: 4rem;
     }
 
+}
+
+@media screen and (min-width: 1030px) {
+    main {
+        grid-template-columns: 28.5rem auto;
+        grid-template-areas:
+            "hero-img card"
+            "hero-img author";
+        max-width: 73rem;
+        max-height: 29rem;
+    }
+
+    .card h1 {
+        font-size: 2.3rem;
+    }
+
+    .card p {
+        font-size: 1.4rem;
+    }
+
+    .hero-img {
+        max-height: 29rem;
+    }
+
+    .share {
+        left: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1031px) and (max-width: 1109px) {
+    main {
+        grid-template-columns: 22rem auto;
+    }
+
+    .card h1 {
+        font-size: 1.9rem;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+    }
 }
