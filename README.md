@@ -45,6 +45,7 @@ Users should be able to:
 - Mobile-first workflow
 
 ### Continued development
+
 This challenge seemed simple at first, but it turned out to be more complex than expected. I had to utilize online resources, especially for implementing the mobile tooltip. I look forward to improving further by creating more webpages and continuing my learning journey.
 
 ### Useful resources

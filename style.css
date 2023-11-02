@@ -148,14 +148,27 @@ main {
     align-items: center;
 }
 
+.share .socials img{
+    transition: transform 0.3s;
+}
+
+.share .socials img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 .share .socials p {
     text-transform: uppercase;
     color: var(--Grayish-Blue);
     display: inherit;
     letter-spacing: 0.38em;
     line-height: 1.5rem;
+    transition: transform 0.3s;
 }
+.share .socials p:hover{
+    cursor: pointer;
+    transform: rotate(5deg);
 
+}
 .share img {
     width: 1.3rem;
     margin-left: 0.8rem;
